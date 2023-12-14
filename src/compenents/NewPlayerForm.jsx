@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 
 
 function NewPlayersForm (){
@@ -6,6 +7,7 @@ function NewPlayersForm (){
     const [breed, setBreed] = useState("")
     const [status, setStatus] = useState("")
     const [imageUrl, setImageUrl] = useState("")
+    const navigate = useNavigate()
 
     async function handleSubmit(event){
         event.preventDefault()
@@ -26,6 +28,8 @@ function NewPlayersForm (){
             )
             const json = await response.json()
             console.log(json)
+
+            navigate('/')
         } catch (error) {
             console.error('Uh oh, trouble rendering the new player form!', err);
         }

@@ -1,2 +1,49 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  img{
+    width: 400px;
+    height: 600px; 
+  }
+  
+  ul{
+    margin: 20px;
+    padding: 10px;
+  
+  }
+  
+  li{
+    border: 5px darkblue dashed;
+    background-color: hsla(240, 100%, 27%, .5);
+    width: fit-content;
+    padding: 20px;
+    margin: 5px;
+    color:aliceblue;
+  }
+  
+  button{
+    border: 3px darkblue solid;
+    background-color: hsla(240, 100%, 27%, .5);
+    color:aliceblue;
+    width: 150px;
+    height: 50px;
+    margin-left: 50px;
+    font-size: 100%;
+    margin-top: 5px;
+  
+  }
+  
+  form{
+    color: navy;
+    font-size: 20px;
+    background-color: hsla(44, 97%, 44%, 0.711);
+    height: 100px;
+    text-align: center;
+  
+  }
   
